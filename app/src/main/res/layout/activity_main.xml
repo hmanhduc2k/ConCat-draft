@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:hint="Name"
+        android:textColor="@color/black"
         android:textStyle="bold|italic"/>
 
     <Button
@@ -23,6 +24,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:background="@color/cardview_dark_background"
-        android:text="Hi" />
+        android:text="This is a button" />
 
 </RelativeLayout>
