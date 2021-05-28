@@ -16,7 +16,9 @@ We hope to create an assistant software for android that allow launching another
 ## MOTIVATIONS:
 
 We wish to create a product that is useful in every aspect of our daily life, specifically in the usage of handphone for various daily tasks or to open certain important applications.
+
 In explaining the rationale of our application, in modern days, time has become more precious and we are becoming less patient when we perform certain actions through our phone. Especially the actions that require a large amount of time to do, actions that are repeated everyday, or actions that are tedious in many ways. These actions incude, but not limit to declaring temperature on UniVus, replying to emails and messages quicker, or setting an alarm clock every night. Most of us tend to be forgetful or grow bored with doing these tasks daily, but they are important enough to make us do them.
+
 This prompts us an important question: What if we can find a shortcut to all these tasks? What if we can perform an action one time, then record it, then we can repeat it later on? Just like playing a Youtube Video? In that, to perform these tasks the second time onwards, the only thing we need to do is press and swipe a button on the screen that is already there?
 
 
