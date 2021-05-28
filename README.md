@@ -10,16 +10,16 @@
 
 ## AIMS:
 
-We hope to create an assistant software for android that allow launching another application or doing various repeated tasks, through an intermediate overlaying widget on the homescreen, by swiping in different directions or interacting with the widget in a different number of ways.
+We hope to create an assistant software for Android that assist in launching another application or automatically perform repeated tasks upon signature, through an intermediate overlaying widget on the homescreen, by interacting or swiping the widget in many different ways.
 
 
 ## MOTIVATIONS:
 
-We wish to create a product that is useful in every aspect of our daily life, specifically in the usage of handphone for various daily tasks or to open certain important applications.
+We wish to create a product that is useful in every aspect of our daily life, specifically in reducing the usage time of handphone for various daily tasks or to reduce operation time in launching certain applications on our phone.
 
-In explaining the rationale of our application, in modern days, time has become more precious and we are becoming less patient when we perform certain actions through our phone. Especially the actions that require a large amount of time to do, actions that are repeated everyday, or actions that are tedious in many ways. These actions incude, but not limit to declaring temperature on UniVus, replying to emails and messages quicker, or setting an alarm clock every night. Most of us tend to be forgetful or grow bored with doing these tasks daily, but they are important enough to make us do them.
+In explaining the rationale of our application, time has become more precious nowadays and we are becoming less patient when we perform certain actions through our phone. Especially those actions that require a large amount of time to do, actions that are repeated everyday, or actions that are tedious in many ways. Some examples would be to declare temperature on UniVus, replying to daily emails and messages, or setting the alarm clock every night. Most of us tend to be forgetful or grow bored with doing these tasks daily, but they are important to the operations of our lives.
 
-This prompts us an important question: What if we can find a shortcut to all these tasks? What if we can perform an action one time, then record it, then we can repeat it later on? Just like playing a Youtube Video? In that, to perform these tasks the second time onwards, the only thing we need to do is press and swipe a button on the screen that is already there?
+This prompts us an important question: What if we can find a shortcut to all these tasks? What if we can perform an action one time, then record it, then we can repeat it later on? Just like playing a Youtube Video? In that, to perform these tasks the second time onwards, the only thing we need to do is press and swipe a button on the screen that is already there? Is there any simple and quick way to ease our lives?
 
 
 ## USERS STORIES
@@ -31,10 +31,10 @@ This prompts us an important question: What if we can find a shortcut to all the
 ## CORE FEATURES
 
 Our assistant software will include these features and designs:
--	Normal Android Mobile App icon, setting, and front-end design
--	A button/widget with customary graphic design overlaying the user’s home screen and can be moved to different locations at the home screen. The default design of the widget should be a cat as our app is named “ConCat”.
--	Customary options on how different swiping directions of the floating widget will result in different apps being launched. We will set out a default setting with 4 cardinal directions launching 4 different applications.
--	Record-and-replay features – depending on the user’s customary choice, swiping the widget will also allow our application to perform multi-stage repeated. In doing so, we will need permission to access user’s data and other applications on the phone.
+-	Normal Android Mobile App icon, setting, and front-end design.
+-	A button/widget with customary graphic design overlaying the user’s home screen and can be moved to different locations at the home screen. The default design of the widget should be a cat as our app is named “ConCat”. To specify further, the widget is similar to Facebook Messenger's Bubble Head.
+-	Customary options on how different swiping directions of the floating widget will result in different apps being launched or different tasks being completed. There will be a default setting with 4 cardinal directions launching 4 different applications.
+-	Record-and-replay features – depending on the user’s customary choice, swiping the widget will also allow our application to perform and repeat multi-stage tasks upon triggering the floating widget. In doing so, we will need permission to access user’s data and other applications on the phone.
 
 
 ### POSSIBLE EXTENSIONS
