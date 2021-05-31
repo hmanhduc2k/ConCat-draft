@@ -64,3 +64,6 @@ Our assistant software will include these features and designs:
 
 -	Passes CS1101S, CS2030S, CS2040S
 -	Background and understanding of mobile application development.
+
+Complete submission with user flow: https://drive.google.com/file/d/19gD2IbFLP0HLARICeN8Ug3d20pHPsJBF/view?usp=sharing
+
