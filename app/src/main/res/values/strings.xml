@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">ConCat</string>
+    <string name="upwards">Choose an app to swipe upwards!</string>
+    <string name="downwards">Choose an app to swipe downwards!</string>
+    <string name="leftwards">Choose an app to swipe leftwards!</string>
+    <string name="rightwards">Choose an app to swipe rightwards!</string>
+    <string name="welcome_users">Welcome, users!</string>
+    <string name="launch_concat">Launch ConCat</string>
+
+    <string-array name="app_choice">
+        <item>Facebook</item>
+        <item>Gmail</item>
+        <item>Instagram</item>
+        <item>Netflix</item>
+        <item>Reddit</item>
+        <item>Telegram</item>
+        <item>Twitter</item>
+        <item>UNivUS</item>
+        <item>Youtube</item>
+        <item>Zoom</item>
+    </string-array>
 </resources>

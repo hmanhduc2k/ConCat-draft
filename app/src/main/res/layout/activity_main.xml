@@ -1,29 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_200"
     tools:context=".MainActivity">
 
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:hint="Name"
-        android:textColor="@color/black"
-        android:textStyle="bold|italic"/>
-
-    <Button
-        android:id="@+id/HiBtn"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:id="@+id/chooseNorth"
+        android:text="@string/upwards"
+        android:textSize="18dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/north"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:entries="@array/app_choice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseSouth"
+        android:text="@string/downwards"
+        android:textSize="18dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="30dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/south"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:entries="@array/app_choice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseEast"
+        android:text="@string/rightwards"
+        android:textSize="18dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="30dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/east"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:entries="@array/app_choice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseWest"
+        android:text="@string/leftwards"
+        android:textSize="18dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="30dp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/west"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:entries="@array/app_choice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:background="@color/cardview_dark_background"
-        android:text="This is a button" />
+        android:text="To use our app, please allow permission to access" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="465dp"
+        android:layout_centerHorizontal="true"
+        android:text="your data and to operate on your home screen" />
+
+    <TextView
+        android:id = "@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textColor="@color/teal_700"
+        android:text = "@string/welcome_users"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/launch_concat" />
 </RelativeLayout>
