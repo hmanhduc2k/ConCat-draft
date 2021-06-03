@@ -18,6 +18,12 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     private TextView textView;
 
+    /**
+     * Upon launching the application, the system will ask the user for
+     * permission to overlay the home screen. Main activity layout is
+     * then set up for the user with the button to launch the widget
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Asking the user to allow permission to overlay home screen
+     */
     private void askForSystemOverlayPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
             Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
@@ -47,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * When exiting the application, the user will still be able to use
+     * the widget overlaying home screen.
+     */
     @Override
     protected void onPause() {
         super.onPause();
@@ -59,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Allow activities to proceed as usual while the button overlay the applications
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == DRAW_OVER_OTHER_APP_PERMISSION) {

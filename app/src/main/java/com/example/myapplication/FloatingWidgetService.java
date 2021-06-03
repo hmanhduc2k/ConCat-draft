@@ -29,6 +29,10 @@ public class FloatingWidgetService extends Service {
         return null;
     }
 
+    /**
+     * Specific for overlaying layout: Creation of the widget, permitting
+     * the widget to overlay home screen, set initial stage and actions
+     */
     @Override
     public void onCreate() {
         super.onCreate();

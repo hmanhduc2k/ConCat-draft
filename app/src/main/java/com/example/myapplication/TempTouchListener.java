@@ -13,6 +13,12 @@ public class TempTouchListener implements View.OnTouchListener{
     private WindowManager.LayoutParams params;
     private View mOverlayView;
 
+    /**
+     * Set initial params
+     * @param mWindowManager
+     * @param mOverlayView
+     * @param params
+     */
     public void setParams(WindowManager mWindowManager, View mOverlayView,
                           WindowManager.LayoutParams params){
         this.params = params;
@@ -20,6 +26,12 @@ public class TempTouchListener implements View.OnTouchListener{
         this.mOverlayView = mOverlayView;
     }
 
+    /**
+     * Specify movements of the widget on the home screen
+     * @param v
+     * @param event
+     * @return
+     */
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         switch (event.getAction()) {

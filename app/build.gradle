@@ -6,6 +6,9 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    /**
+     * File changed to permit lower level sdk version
+     */
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdkVersion 21
