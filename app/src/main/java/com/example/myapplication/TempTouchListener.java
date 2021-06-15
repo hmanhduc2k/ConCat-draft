@@ -12,6 +12,8 @@ public class TempTouchListener implements View.OnTouchListener{
     private WindowManager mWindowManager;
     private WindowManager.LayoutParams params;
     private View mOverlayView;
+    private View collapsedView;
+    private View expandedView;
 
     /**
      * Set initial params
@@ -24,6 +26,11 @@ public class TempTouchListener implements View.OnTouchListener{
         this.params = params;
         this.mWindowManager = mWindowManager;
         this.mOverlayView = mOverlayView;
+    }
+
+    public void setViews(View collapsedView, View expandedView){
+        this.collapsedView = collapsedView;
+        this.expandedView = expandedView;
     }
 
     /**
@@ -42,6 +49,8 @@ public class TempTouchListener implements View.OnTouchListener{
                 initialTouchY = event.getRawY();
                 return true;
             case MotionEvent.ACTION_UP:
+                collapsedView.setVisibility(View.GONE);
+                expandedView.setVisibility(View.VISIBLE);
                 return true;
             case MotionEvent.ACTION_MOVE:
                 float xDiff = Math.round(event.getRawX() - initialTouchX);
