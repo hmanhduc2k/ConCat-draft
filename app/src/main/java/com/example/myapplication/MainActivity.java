@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final int SYSTEM_ALERT_WINDOW_PERMISSION = 123;
     private Button button;
 
+    /**
+     * After onCreate(), system will ask for permission to overlay the widget.
+     * onClickListener method already settled
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +33,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          */
     }
 
+    /**
+     * Ask to overlay the home screen by creating intent that parses the package of the
+     * current activity
+     */
     private void askForSystemOverlayPermission(){
         Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
                 Uri.parse("package:" + getPackageName()));
         startActivityForResult(intent, SYSTEM_ALERT_WINDOW_PERMISSION);
     }
 
+    /**
+     * What happens on clicking the button
+     * @param v
+     */
     @Override
     public void onClick(View v) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
@@ -48,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     * What happens when the main activity is paused
+     */
     @Override
     protected void onPause() {
         super.onPause();

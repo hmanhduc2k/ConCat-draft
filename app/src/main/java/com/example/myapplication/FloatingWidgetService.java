@@ -20,6 +20,10 @@ public class FloatingWidgetService extends Service implements View.OnClickListen
 
     }
 
+    /**
+     * On creation of the widget, what happens for collapsed view and expanded view
+     * of the widget.
+     */
     public void onCreate(){
         super.onCreate();
 
@@ -58,6 +62,10 @@ public class FloatingWidgetService extends Service implements View.OnClickListen
         return null;
     }
 
+    /**
+     * What happens if clicking the widget
+     * @param v
+     */
     @Override
     public void onClick(View v) {
         switch (v.getId()){

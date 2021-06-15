@@ -34,7 +34,8 @@ public class TempTouchListener implements View.OnTouchListener{
     }
 
     /**
-     * Specify movements of the widget on the home screen
+     * Specify movements of the widget on the home screen. Most likely we will have
+     * to deal with this - basic geometry and all that.
      * @param v
      * @param event
      * @return
